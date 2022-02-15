@@ -32,11 +32,11 @@ export const MOUSE: YellowObject = {
 };
 
 export const MAIN_IMAGE_BG: MainImage = {
-  SRC: '/images/main_bg.png',
+  SRC: '/images/main/main_bg.svg',
   ALT: 'main_bg',
 };
 
 export const MAIN_IMAGE: MainImage = {
-  SRC: '/images/main.png',
+  SRC: '/images/main/main.svg',
   ALT: 'main',
 };
