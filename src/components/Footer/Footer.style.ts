@@ -25,18 +25,23 @@ export const Left = styled.div`
 `;
 
 export const Logo = styled.h2`
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
 `;
 
 export const Info = styled.span`
+  font-size: 14px;
+  line-height: 24px;
   color: grey;
+  display: inline-block;
 `;
 
 export const Right = styled.ul`
-  width: 50%;
+  // width: 50%;
 `;
 
 export const List = styled.li`
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
 `;

@@ -12,6 +12,8 @@ const Footer = () => {
           </S.Info>
           <S.Info>제주특별시 서귀포시 중정로 86, 304</S.Info>
           <S.Info>통신판매업 신고번호 : 2019-서울강남-00301호</S.Info>
+          <br />
+          <br />
           <S.Info>© Hodoo Labs. ALL RIGHTS RESERVED</S.Info>
         </S.Left>
         <S.Right>
