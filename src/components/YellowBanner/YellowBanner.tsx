@@ -1,11 +1,30 @@
 import * as S from './YellowBanner.style';
 import Image from 'next/image';
 
+interface Logo {
+  SRC: string;
+  WIDTH: string;
+  HEIGHT: string;
+  ALT: string;
+}
+
 const YellowBanner = () => {
+  const LOGO: Logo = {
+    SRC: '/images/logo.gif',
+    WIDTH: '101',
+    HEIGHT: '75',
+    ALT: 'logo',
+  };
+
   return (
     <S.Container>
       <S.Wrap>
-        <Image src="/images/logo.gif" width="101" height="75" alt="logo" />
+        <Image
+          src={LOGO.SRC}
+          width={LOGO.WIDTH}
+          height={LOGO.HEIGHT}
+          alt={LOGO.ALT}
+        />
         <S.Title>땅콩스쿨이란?</S.Title>
         <S.Text>
           실시간(LIVE)으로, 아이들이 좋아하는 캐릭터 선생님을 통해,

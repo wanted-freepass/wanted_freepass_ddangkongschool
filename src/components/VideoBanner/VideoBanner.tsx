@@ -1,6 +1,8 @@
 import * as S from './VideoBanner.style';
 
 const VideoBanner = () => {
+  const VIDEO_SRC: string = 'videos/main_video.mp4';
+
   return (
     <S.Container>
       <S.ContentWrap>
@@ -19,7 +21,7 @@ const VideoBanner = () => {
         <S.VideoContainer>
           <S.Ipad />
           <S.VideoWrap>
-            <S.Video src="videos/main_video.mp4" loop autoPlay muted />
+            <S.Video src={VIDEO_SRC} loop autoPlay muted />
           </S.VideoWrap>
         </S.VideoContainer>
       </S.ContentWrap>
