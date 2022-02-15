@@ -1,17 +1,15 @@
+import { useRef } from 'react';
 import * as S from './VideoBanner.style';
 
 const VideoBanner = () => {
+  const pageX = useRef(null);
   const VIDEO_SRC: string = 'videos/main_video.mp4';
 
   return (
-    <S.Container>
+    <S.Container ref={pageX}>
       <S.ContentWrap>
         <S.TextWrap>
-          <S.Title>
-            랜선 라이브
-            <br />
-            북클래스
-          </S.Title>
+          <S.Title>랜선 라이브 북클래스</S.Title>
           <S.Text>
             친구들과 함께
             <br /> 그림 그리기, 퀴즈 풀기.
