@@ -19,6 +19,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 5,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
       {
@@ -26,6 +28,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
       {
@@ -33,6 +37,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
     ],
