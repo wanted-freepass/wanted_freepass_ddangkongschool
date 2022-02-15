@@ -44,4 +44,25 @@ export const Right = styled.ul`
 export const List = styled.li`
   font-size: 16px;
   display: inline-block;
+  line-height: 28px;
+  margin-right: 20px;
+`;
+
+export const Icons = styled.div`
+  display: flex;
+`;
+
+export const Icon = styled.div`
+  border-radius: 50%;
+  border: 1.5px solid #eeeeee;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px 0 0;
+`;
+
+export const Img = styled.img`
+  width: 50%;
 `;

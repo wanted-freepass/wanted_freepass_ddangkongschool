@@ -23,6 +23,14 @@ const Footer = () => {
           <S.List>이용약관</S.List>
           <S.List>개인정보 처리방침</S.List>
           <S.List>환불정책</S.List>
+          <S.Icons>
+            <S.Icon>
+              <S.Img src="/images/footer/Image 36.png" />
+            </S.Icon>
+            <S.Icon>
+              <S.Img src="/images/footer/Image 37.png" />
+            </S.Icon>
+          </S.Icons>
         </S.Right>
       </S.Container>
     </S.Wrapper>
