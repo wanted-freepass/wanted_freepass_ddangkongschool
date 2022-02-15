@@ -1,12 +1,15 @@
 import type { NextPage } from 'next';
-import Nav from '../components/Nav/Nav';
 import BooksCarouselPage from '../components/BooksCarouselPage/BooksCarouselPage';
+import Main from '../components/Main/Main';
+import VideoBanner from '../components/VideoBanner';
+import YellowBanner from '../components/YellowBanner/YellowBanner';
 
 const Home: NextPage = () => {
   return (
     <>
-      <div>안녕</div>
-      <Nav />
+      <Main />
+      <YellowBanner />
+      <VideoBanner />
       <BooksCarouselPage />
     </>
   );
