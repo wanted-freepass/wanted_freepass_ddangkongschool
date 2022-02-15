@@ -36,8 +36,6 @@ const Main = () => {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            // width="1920"
-            // height="1080"
             alt="main"
           />
         </S.MainImage>

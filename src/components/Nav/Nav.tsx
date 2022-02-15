@@ -8,7 +8,7 @@ const Nav = () => {
     <S.Nav>
       <S.NavWrap>
         <S.LogoWrap>
-          <Image src="/images/logo.png" width="140" height="32" alt="logo" />
+          <Image src="/images/logo.png" width="154" height="50" alt="logo" />
         </S.LogoWrap>
         <S.MenuList>
           {LIST_DATA.map(data => {

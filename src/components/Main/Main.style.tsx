@@ -19,11 +19,12 @@ export const TitleWrap = styled.div`
   ${props => props.theme.flex('center', 'flex-start')};
   position: absolute;
   width: 100%;
-  max-width: 1140px;
   margin-top: 230px;
 `;
 
 export const Title = styled.h1`
+  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
   color: ${props => props.theme.white};
   font-weight: ${props => props.theme.weightBold};
@@ -43,7 +44,6 @@ export const YellowAccent = styled.div`
 export const Line = styled.div`
   position: absolute;
   top: 385px;
-  left: 12px;
 `;
 
 export const Star = styled.div`
@@ -53,19 +53,18 @@ export const Star = styled.div`
 `;
 
 export const MouseWrap = styled.div`
+  ${props => props.theme.flex('center', 'center')};
   position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-  text-align: center;
   z-index: 200;
-
   animation: ${moveUp} 2s ease-in-out infinite;
 `;
 
 export const Mouse = styled.div`
-  display: inline-block;
   position: absolute;
-  bottom: -840px;
+  bottom: -85vh;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
 `;
 
 export const MainWrap = styled.div`
