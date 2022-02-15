@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Carousel from '../components/Carousel/carousel';
+import BooksCarouselPage from '../components/BooksCarouselPage/BooksCarouselPage';
 import Main from '../components/Main/Main';
 import VideoBanner from '../components/VideoBanner';
 import YellowBanner from '../components/YellowBanner/YellowBanner';
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Main />
       <YellowBanner />
       <VideoBanner />
-      <Carousel />
+      <BooksCarouselPage />
     </>
   );
 };

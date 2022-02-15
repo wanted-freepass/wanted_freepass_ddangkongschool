@@ -56,9 +56,16 @@ const Carousel = () => {
 
 export default Carousel;
 
-const CarouselWrap = styled.div``;
+const CarouselWrap = styled.div`
+  margin-top: 100px;
+  padding-bottom: 150px;
+`;
 
-const SlickSlider = styled(Slider)``;
+const SlickSlider = styled(Slider)`
+  .slick-arrow.slick-next {
+    display: none;
+  }
+`;
 
 const SlickContent = styled.div``;
 
