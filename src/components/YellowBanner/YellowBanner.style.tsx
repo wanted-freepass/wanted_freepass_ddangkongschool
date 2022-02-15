@@ -18,8 +18,7 @@ export const Wrap = styled.article`
   }
 
   @media ${({ theme }) => theme.tablet} {
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -120px;
   }
 `;
 
@@ -30,7 +29,8 @@ export const Title = styled.h2`
 
   @media ${({ theme }) => theme.tablet} {
     margin-top: 10px;
-    font-size: 30px;
+    font-weight: ${props => props.theme.weightRegular};
+    font-size: ${props => props.theme.fontMedium};
   }
 `;
 
@@ -39,12 +39,13 @@ export const Text = styled.p`
   line-height: 40px;
 
   @media ${({ theme }) => theme.laptop} {
-    font-size: 22px;
+    font-size: ${props => props.theme.fontRegular};
   }
 
   @media ${({ theme }) => theme.tablet} {
-    font-size: 16px;
     width: 80%;
     margin-bottom: -100px;
+    font-size: ${props => props.theme.fontSmall};
+    line-height: 30px;
   }
 `;

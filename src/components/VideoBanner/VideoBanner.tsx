@@ -1,12 +1,10 @@
-import { useRef } from 'react';
 import * as S from './VideoBanner.style';
 
 const VideoBanner = () => {
-  const pageX = useRef(null);
   const VIDEO_SRC: string = 'videos/main_video.mp4';
 
   return (
-    <S.Container ref={pageX}>
+    <S.Container>
       <S.ContentWrap>
         <S.TextWrap>
           <S.Title>랜선 라이브 북클래스</S.Title>
