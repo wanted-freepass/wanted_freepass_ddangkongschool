@@ -9,13 +9,8 @@ interface Logo {
   ALT: string;
 }
 
-interface Resize {
-  width: number | null;
-  height: number | null;
-}
-
 const YellowBanner = () => {
-  const windowDimensions: Resize = useResize();
+  const windowDimensions = useResize();
   const resizeWindowX = windowDimensions.width <= 1200 ? <br /> : '';
   const resizeWindowXOver = windowDimensions.width >= 1200 ? <br /> : '';
 

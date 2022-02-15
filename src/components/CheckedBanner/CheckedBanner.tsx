@@ -3,13 +3,8 @@ import * as S from './CheckedBanner.style';
 import { BOOK_DATA, CHECKED_IMAGE, BOOK_IMAGE } from './data';
 import { useResize } from '../../hooks/useResize';
 
-interface Resize {
-  width: number | null;
-  height: number | null;
-}
-
 const CheckedBanner = () => {
-  const windowDimensions: Resize = useResize();
+  const windowDimensions = useResize();
   const resizeWindowX = windowDimensions.width >= 1200 ? <br /> : '';
 
   return (

@@ -2,6 +2,8 @@ import Image from 'next/image';
 import * as S from './Nav.style';
 import { LIST_DATA } from './data';
 import Link from 'next/link';
+import { useResize } from '../../hooks/useResize';
+
 
 const Nav = () => {
   const LOGO = {
