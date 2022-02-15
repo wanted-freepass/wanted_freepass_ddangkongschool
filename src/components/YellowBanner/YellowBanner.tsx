@@ -1,6 +1,6 @@
 import * as S from './YellowBanner.style';
 import Image from 'next/image';
-import Fade from 'react-reveal/Fade';
+import { useResize } from '../../hooks/useResize';
 
 interface Logo {
   SRC: string;
@@ -10,6 +10,11 @@ interface Logo {
 }
 
 const YellowBanner = () => {
+  const windowDimensions = useResize();
+  const width: number | null = windowDimensions.width;
+  const resizeWindowX: JSX.Element | null = width! <= 1200 ? <br /> : null;
+  const resizeWindowXOver: JSX.Element | null = width! >= 1200 ? <br /> : null;
+
   const LOGO: Logo = {
     SRC: '/images/logo.gif',
     WIDTH: '101',
@@ -26,17 +31,15 @@ const YellowBanner = () => {
           height={LOGO.HEIGHT}
           alt={LOGO.ALT}
         />
-        <Fade bottom>
-          <S.Title>땅콩스쿨이란?</S.Title>
-        </Fade>
-        <Fade bottom>
-          <S.Text>
-            실시간(LIVE)으로, 아이들이 좋아하는 캐릭터 선생님을 통해,
-            <br />
-            친구들과 함께 창의독서, 퀴즈 등을 재미있게 즐길 수 있는 온라인
-            서비스입니다.
-          </S.Text>
-        </Fade>
+        <S.Title>땅콩스쿨이란?</S.Title>
+        <S.Text>
+          실시간(LIVE)으로, 아이들이 좋아하는{resizeWindowX} 캐릭터 선생님을
+          통해,
+          {resizeWindowX}
+          {resizeWindowXOver}
+          친구들과 함께 창의독서, 퀴즈 등을{resizeWindowX} 재미있게 즐길 수 있는
+          온라인 서비스입니다.
+        </S.Text>
       </S.Wrap>
     </S.Container>
   );

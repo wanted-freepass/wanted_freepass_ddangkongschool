@@ -104,9 +104,9 @@ export const Ipad = styled.article`
   }
 
   @media ${({ theme }) => theme.tablet} {
-    width: 380px;
-    height: 288px;
-    margin-left: 50px;
+    width: 398px;
+    height: 305px;
+    margin-left: 45px;
   }
 `;
 
@@ -120,21 +120,21 @@ export const Video = styled.video.attrs({
   position: absolute;
   bottom: 97px;
   left: 80px;
-  width: 763px;
+  width: 764px;
   border-radius: 15px;
 
   @media ${({ theme }) => theme.laptop} {
     bottom: 79px;
     left: 85px;
-    width: 624px;
+    width: 625px;
     height: 468px;
   }
 
   @media ${({ theme }) => theme.tablet} {
-    bottom: 40px;
-    left: 53px;
-    width: 335px;
-    height: 235px;
-    border: 1px solid red;
+    bottom: 38px;
+    left: 59px;
+    width: 340px;
+    height: 258px;
+    border-radius: 10px;
   }
 `;
