@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.footer`
   width: 100%;
-  height: 703px;
+  height: 299px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
