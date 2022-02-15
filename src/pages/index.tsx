@@ -8,7 +8,6 @@ const Home: NextPage = () => {
       <div>안녕</div>
       <Nav />
       <BooksCarouselPage />
-      {/* <Test /> */}
     </>
   );
 };
