@@ -1,15 +1,26 @@
 import Image from 'next/image';
 import * as S from './Main.style';
+import { LINE, STAR, MOUSE, MAIN_IMAGE_BG, MAIN_IMAGE } from './data';
 
 const Main = () => {
   return (
     <S.Main>
       <S.YellowAccent>
         <S.Line>
-          <Image src="/images/line.png" width="220" height="11" alt="star" />
+          <Image
+            src={LINE.SRC}
+            width={LINE.WIDTH}
+            height={LINE.HEIGHT}
+            alt={LINE.ALT}
+          />
         </S.Line>
         <S.Star>
-          <Image src="/images/star.png" width="48" height="48" alt="line" />
+          <Image
+            src={STAR.SRC}
+            width={STAR.WIDTH}
+            height={STAR.HEIGHT}
+            alt={STAR.ALT}
+          />
         </S.Star>
       </S.YellowAccent>
 
@@ -25,25 +36,30 @@ const Main = () => {
 
       <S.MouseWrap>
         <S.Mouse>
-          <Image src="/images/mouse.png" width="48" height="48" alt="mouse" />
+          <Image
+            src={MOUSE.SRC}
+            width={MOUSE.WIDTH}
+            height={MOUSE.HEIGHT}
+            alt={MOUSE.ALT}
+          />
         </S.Mouse>
       </S.MouseWrap>
 
       <S.MainWrap>
         <S.MainImage>
           <Image
-            src="/images/main_bg.png"
+            src={MAIN_IMAGE_BG.SRC}
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            alt="main"
+            alt={MAIN_IMAGE_BG.ALT}
           />
           <Image
-            src="/images/main.png"
+            src={MAIN_IMAGE.SRC}
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            alt="main"
+            alt={MAIN_IMAGE.ALT}
           />
         </S.MainImage>
       </S.MainWrap>

@@ -16,6 +16,19 @@ export default function BookReport() {
         <br /> 독서일기를 통해 확인해보세요. 읽기만 해도 자동으로 기록되고,
         공유도 가능해요.
       </TextLayout>
+      <S.ReportImgWrapper>
+        <S.ReportLeftWrap>
+          <S.ReportCardImg src="/images/reportGreen.svg" />
+          <S.ReportCardImg src="/images/reportWhite.svg" />
+        </S.ReportLeftWrap>
+        <S.ReportCenterWrap>
+          <S.ReportCardImg src="/images/reportPhone.svg" />
+        </S.ReportCenterWrap>
+        <S.ReportRightWrap>
+          <S.ReportCardImg src="/images/reportBlack.svg" />
+          <S.ReportCardImg src="/images/reportCard.svg" />
+        </S.ReportRightWrap>
+      </S.ReportImgWrapper>
     </S.PageWrap>
   );
 }
