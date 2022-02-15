@@ -31,6 +31,7 @@ export const Text = styled.p`
 export const CheckedContainer = styled.div`
   ${props => props.theme.flex('center', 'flex-end', 'row')};
   position: relative;
+  right: -34px;
   width: 788px;
   height: 566px;
 `;
@@ -41,7 +42,7 @@ export const BookContainer = styled.div`
 `;
 
 export const BookWrap = styled.div`
-  margin: 20px;
+  margin-left: 50px;
   ${props => props.theme.flex('center', 'center', 'column')};
 `;
 

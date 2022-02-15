@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import * as S from './CheckedBanner.style';
+import { BOOK_DATA } from './data';
 
 const CheckedBanner = () => {
   return (
@@ -20,54 +21,21 @@ const CheckedBanner = () => {
           </S.Text>
         </S.TextWrap>
         <S.CheckedContainer>
-          <S.BookWrap>
-            <S.CheckedWrap>
-              <Image
-                src="/images/checkedBanner/yellowCheck.gif"
-                width="190"
-                height="120"
-                alt="check"
-              />
-            </S.CheckedWrap>
-            <Image
-              src="/images/checkedBanner/book_1.png"
-              width="180"
-              height="230"
-              alt="book_1"
-            />
-          </S.BookWrap>
-          <S.BookWrap>
-            <S.CheckedWrap>
-              <Image
-                src="/images/checkedBanner/yellowCheck.gif"
-                width="190"
-                height="120"
-                alt="check"
-              />
-            </S.CheckedWrap>
-            <Image
-              src="/images/checkedBanner/book_1.png"
-              width="180"
-              height="230"
-              alt="book_1"
-            />
-          </S.BookWrap>
-          <S.BookWrap>
-            <S.CheckedWrap>
-              <Image
-                src="/images/checkedBanner/yellowCheck.gif"
-                width="190"
-                height="120"
-                alt="check"
-              />
-            </S.CheckedWrap>
-            <Image
-              src="/images/checkedBanner/book_1.png"
-              width="180"
-              height="230"
-              alt="book_1"
-            />
-          </S.BookWrap>
+          {BOOK_DATA.map(data => {
+            return (
+              <S.BookWrap key={data.id}>
+                <S.CheckedWrap>
+                  <Image
+                    src="/images/checkedBanner/yellowCheck.gif"
+                    width="190"
+                    height="120"
+                    alt="check"
+                  />
+                </S.CheckedWrap>
+                <Image src={data.src} width="180" height="230" alt={data.alt} />
+              </S.BookWrap>
+            );
+          })}
         </S.CheckedContainer>
       </S.ContentWrap>
     </S.Container>
