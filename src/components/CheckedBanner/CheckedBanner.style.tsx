@@ -30,7 +30,14 @@ export const ContentWrap = styled.div`
   }
 `;
 
-export const TextWrap = styled.article``;
+export const TextWrap = styled.article`
+  @media ${({ theme }) => theme.laptop} {
+    margin-top: 120px;
+  }
+
+  @media ${({ theme }) => theme.tablet} {
+  }
+`;
 
 export const Title = styled.h1`
   margin-bottom: 50px;
@@ -53,7 +60,7 @@ export const Text = styled.p`
   @media ${({ theme }) => theme.tablet} {
     font-weight: ${props => props.theme.weightRegular};
     font-size: ${props => props.theme.fontSmall};
-    line-height: 20px;
+    line-height: 30px;
   }
 `;
 
