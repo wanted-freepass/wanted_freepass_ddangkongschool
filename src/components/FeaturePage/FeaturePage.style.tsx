@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PageWrap = styled.div`
-  background-color: rgb(249, 249, 249);
+  background: ${({ theme }) => theme.lightGray};
 `;
 
 export const CardWrapper = styled.div`

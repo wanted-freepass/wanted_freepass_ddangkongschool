@@ -7,7 +7,7 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -19,6 +19,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 5,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
       {
@@ -26,6 +28,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
       {
@@ -33,6 +37,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          autoplaySpeed: 4000,
+          speed: 4000,
         },
       },
     ],
@@ -59,6 +65,10 @@ export default Carousel;
 const CarouselWrap = styled.div`
   margin-top: 100px;
   padding-bottom: 150px;
+
+  @media ${({ theme }) => theme.tablet} {
+    padding-bottom: 80px;
+  }
 `;
 
 const SlickSlider = styled(Slider)`
