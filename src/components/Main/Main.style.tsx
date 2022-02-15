@@ -20,6 +20,15 @@ export const TitleWrap = styled.div`
   position: absolute;
   width: 100%;
   margin-top: 230px;
+
+  @media ${({ theme }) => theme.laptop} {
+    margin-top: 300px;
+    margin-left: 50px;
+  }
+
+  @media ${({ theme }) => theme.tablet} {
+    margin-top: 480px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -31,6 +40,11 @@ export const Title = styled.h1`
   font-size: ${props => props.theme.fontExtraLarge};
   line-height: 80px;
   z-index: 100;
+
+  @media ${({ theme }) => theme.tablet} {
+    font-size: 36px;
+    line-height: 1.33;
+  }
 `;
 
 export const YellowAccent = styled.div`
@@ -44,12 +58,34 @@ export const YellowAccent = styled.div`
 export const Line = styled.div`
   position: absolute;
   top: 385px;
+
+  @media ${({ theme }) => theme.laptop} {
+    width: 360px;
+    top: 453px;
+    left: 50px;
+  }
+
+  @media ${({ theme }) => theme.tablet} {
+    width: 150px;
+    top: 567px;
+    left: 45px;
+  }
 `;
 
 export const Star = styled.div`
   position: absolute;
   top: 290px;
   left: -10px;
+
+  @media ${({ theme }) => theme.laptop} {
+    top: 360px;
+    left: 36px;
+  }
+
+  @media ${({ theme }) => theme.tablet} {
+    top: 510px;
+    left: 25px;
+  }
 `;
 
 export const MouseWrap = styled.div`
