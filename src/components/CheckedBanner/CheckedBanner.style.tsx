@@ -4,6 +4,7 @@ export const Container = styled.section`
   ${props => props.theme.flex()};
   width: 100%;
   height: 647px;
+  background-color: ${props => props.theme.lightGray};
 `;
 
 export const ContentWrap = styled.div`

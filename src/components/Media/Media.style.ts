@@ -5,8 +5,8 @@ export const Wrapper = styled.footer`
   height: 921px;
   border-radius: 0px;
   position: relative;
-  dispalay: flex;
-  background-color: #f9f9f9;
+  display: flex;
+  background-color: #fff;
 `;
 
 export const Container = styled.div`
