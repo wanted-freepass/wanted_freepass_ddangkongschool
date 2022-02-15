@@ -4,6 +4,7 @@ export const Wrapper = styled.footer`
   width: 100%;
   height: 1397px;
   position: relative;
+  display: flex;
 `;
 
 export const Container = styled.div`

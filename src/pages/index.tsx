@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Reviews from '../components/Reviews/Reviews';
 import Downloads from '../components/Downloads/Downloads';
-import Carousel from '../components/Carousel/carousel';
 import CheckedBanner from '../components/CheckedBanner/CheckedBanner';
 import BooksCarouselPage from '../components/BooksCarouselPage/BooksCarouselPage';
 import VideoBanner from '../components/VideoBanner';
@@ -15,8 +14,8 @@ const Home: NextPage = () => {
       <Main />
       <YellowBanner />
       <VideoBanner />
-      <Media />
       <CheckedBanner />
+      <Media />
       <BooksCarouselPage />
       <Reviews />
       <Downloads />
