@@ -32,6 +32,13 @@ const Main = () => {
       <S.MainWrap>
         <S.MainImage>
           <Image
+            src="/images/main_bg.png"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            alt="main"
+          />
+          <Image
             src="/images/main.png"
             layout="fill"
             objectFit="cover"
