@@ -8,11 +8,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "@types/react-slick": "^0.23.8",
     "babel-plugin-styled-components": "^2.0.2",
     "next": "12.0.10",
     "react": "17.0.2",
+    "react-carrousel": "^1.1.0",
     "react-dom": "17.0.2",
     "react-is": "^17.0.2",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "styled-reset": "^4.3.4"
   },
