@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import * as S from './CheckedBanner.style';
 
 const CheckedBanner = () => {
@@ -18,7 +19,56 @@ const CheckedBanner = () => {
             직접 선정해요!
           </S.Text>
         </S.TextWrap>
-        <S.VideoContainer />
+        <S.CheckedContainer>
+          <S.BookWrap>
+            <S.CheckedWrap>
+              <Image
+                src="/images/checkedBanner/yellowCheck.gif"
+                width="190"
+                height="120"
+                alt="check"
+              />
+            </S.CheckedWrap>
+            <Image
+              src="/images/checkedBanner/book_1.png"
+              width="180"
+              height="230"
+              alt="book_1"
+            />
+          </S.BookWrap>
+          <S.BookWrap>
+            <S.CheckedWrap>
+              <Image
+                src="/images/checkedBanner/yellowCheck.gif"
+                width="190"
+                height="120"
+                alt="check"
+              />
+            </S.CheckedWrap>
+            <Image
+              src="/images/checkedBanner/book_1.png"
+              width="180"
+              height="230"
+              alt="book_1"
+            />
+          </S.BookWrap>
+          <S.BookWrap>
+            <S.CheckedWrap>
+              <Image
+                src="/images/checkedBanner/yellowCheck.gif"
+                width="190"
+                height="120"
+                alt="check"
+              />
+            </S.CheckedWrap>
+            <Image
+              src="/images/checkedBanner/book_1.png"
+              width="180"
+              height="230"
+              alt="book_1"
+            />
+          </S.BookWrap>
+        </S.CheckedContainer>
       </S.ContentWrap>
     </S.Container>
   );

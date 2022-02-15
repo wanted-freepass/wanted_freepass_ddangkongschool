@@ -14,12 +14,10 @@ export const NavWrap = styled.div`
   max-width: 1140px;
 `;
 
-export const LogoWrap = styled.div`
-  width: 100%;
-`;
+export const LogoWrap = styled.div``;
 
 export const MenuList = styled.ul`
-  ${props => props.theme.flex('center', 'center')};
+  ${props => props.theme.flex('center', 'flex-end')};
   width: 100%;
 `;
 

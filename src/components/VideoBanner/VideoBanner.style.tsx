@@ -23,7 +23,7 @@ export const TextWrap = styled.article`
 `;
 
 export const Title = styled.h1`
-  margin: 50px 0;
+  margin-bottom: 50px;
   font-weight: ${props => props.theme.weightBold};
   font-size: ${props => props.theme.fontLarge};
   line-height: 70px;
@@ -37,7 +37,7 @@ export const Text = styled.p`
 
 export const VideoContainer = styled.div`
   width: 788px;
-  height: 566px;
+  height: 650px;
 `;
 
 export const Ipad = styled.article`
