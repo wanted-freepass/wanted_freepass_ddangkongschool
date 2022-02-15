@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function TextLayout({ children }): string {
+export default function TextLayout({ children }): any {
   return <Description>{children}</Description>;
 }
 

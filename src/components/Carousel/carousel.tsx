@@ -62,7 +62,12 @@ const CarouselWrap = styled.div`
 `;
 
 const SlickSlider = styled(Slider)`
-  .slick-arrow.slick-next {
+  button {
+    display: none;
+    right: 0;
+  }
+
+  .slick-next:before {
     display: none;
   }
 `;
