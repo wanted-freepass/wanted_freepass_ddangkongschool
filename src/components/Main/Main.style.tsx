@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const moveUp = keyframes`
+  0% {
+    transform: translateY(0px);
+  } 50% {
+    transform: translateY(50px);
+  } 100% {
+    transform: translateY(0px);
+  }
+`;
 
 export const Main = styled.div`
   width: 100%;
@@ -44,10 +54,13 @@ export const MouseWrap = styled.div`
   margin: 0 auto;
   text-align: center;
   z-index: 200;
+
+  animation: ${moveUp} 2s ease-in-out infinite;
+  animation-delay: 0.5s;
 `;
 
 export const Mouse = styled.div`
   display: inline-block;
   position: absolute;
-  bottom: -420px;
+  bottom: -375px;
 `;
