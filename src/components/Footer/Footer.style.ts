@@ -55,8 +55,8 @@ export const Icons = styled.div`
 export const Icon = styled.div`
   border-radius: 50%;
   border: 1.5px solid #eeeeee;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
