@@ -4,7 +4,6 @@ export const Nav = styled.nav`
   position: fixed;
   width: 100%;
   padding: 25px 0;
-
   z-index: 999;
 `;
 

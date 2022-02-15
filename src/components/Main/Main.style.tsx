@@ -11,17 +11,20 @@ const moveUp = keyframes`
 `;
 
 export const Main = styled.div`
+  position: relative;
   width: 100%;
 `;
 
 export const TitleWrap = styled.div`
-  max-width: 1140px;
   ${props => props.theme.flex('center', 'flex-start')};
-  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  max-width: 1140px;
+  margin-top: 230px;
 `;
 
 export const Title = styled.h1`
-  margin-top: 230px;
+  margin: 0 auto;
   color: ${props => props.theme.white};
   font-weight: ${props => props.theme.weightBold};
   font-size: ${props => props.theme.fontExtraLarge};
@@ -40,12 +43,13 @@ export const YellowAccent = styled.div`
 export const Line = styled.div`
   position: absolute;
   top: 385px;
+  left: 12px;
 `;
 
 export const Star = styled.div`
   position: absolute;
   top: 290px;
-  left: -20px;
+  left: -10px;
 `;
 
 export const MouseWrap = styled.div`
@@ -56,11 +60,21 @@ export const MouseWrap = styled.div`
   z-index: 200;
 
   animation: ${moveUp} 2s ease-in-out infinite;
-  animation-delay: 0.5s;
 `;
 
 export const Mouse = styled.div`
   display: inline-block;
   position: absolute;
-  bottom: -375px;
+  bottom: -840px;
+`;
+
+export const MainWrap = styled.div`
+  display: flex;
+  position: relative;
+`;
+
+export const MainImage = styled.div`
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 `;
