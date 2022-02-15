@@ -1,4 +1,4 @@
-<h1>원티드 프리온보딩 코스 1주차 과제</h1>
+<h1>원티드 프리온보딩 코스 3주차 첫번째 과제</h1>
 
 ## 배포
 
@@ -18,7 +18,7 @@
 
 ## 프로젝트 설명
 
-- 00 페이지
+- 호두랩스
 
 ## 프로젝트 실행 방법
 
@@ -40,8 +40,8 @@
 ## Tools
 
 ```
-- View (React.js, React-Router, Styled-components)
-- Build Tool (Create React App)
+- View (Next.js, TypeScript, Styled-components)
+- Build Tool (Create Next App)
 - Code Quality Tool (Prettier)
 - Other Tools (Git, Github, notion, Slack. AWS)
 ```

@@ -5,7 +5,8 @@ import { useResize } from '../../hooks/useResize';
 
 const CheckedBanner = () => {
   const windowDimensions = useResize();
-  const resizeWindowX = windowDimensions.width >= 1200 ? <br /> : '';
+  const width: number | null = windowDimensions.width;
+  const resizeWindowX: JSX.Element | null = width! >= 1200 ? <br /> : null;
 
   return (
     <S.Container>

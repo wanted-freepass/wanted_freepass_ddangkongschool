@@ -22,7 +22,7 @@ export const TitleWrap = styled.div`
   margin-top: 230px;
 
   @media ${({ theme }) => theme.laptop} {
-    margin-top: 300px;
+    margin-top: 480px;
     margin-left: 50px;
   }
 
@@ -60,8 +60,7 @@ export const Line = styled.div`
   top: 385px;
 
   @media ${({ theme }) => theme.laptop} {
-    width: 360px;
-    top: 453px;
+    top: 630px;
     left: 50px;
   }
 
@@ -78,7 +77,7 @@ export const Star = styled.div`
   left: -10px;
 
   @media ${({ theme }) => theme.laptop} {
-    top: 360px;
+    top: 540px;
     left: 36px;
   }
 
@@ -106,10 +105,17 @@ export const Mouse = styled.div`
 export const MainWrap = styled.div`
   display: flex;
   position: relative;
+
+  @media ${({ theme }) => theme.tablet} {
+  }
 `;
 
 export const MainImage = styled.div`
   position: relative;
   height: 100vh;
   width: 100vw;
+
+  @media ${({ theme }) => theme.tablet} {
+    margin: 0 auto;
+  }
 `;

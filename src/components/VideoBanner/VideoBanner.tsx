@@ -3,7 +3,8 @@ import { useResize } from '../../hooks/useResize';
 
 const VideoBanner = () => {
   const windowDimensions = useResize();
-  const resizeWindowX = windowDimensions.width >= 1200 ? <br /> : '';
+  const width: number | null = windowDimensions.width;
+  const resizeWindowX: JSX.Element | null = width! >= 1200 ? <br /> : null;
   const VIDEO_SRC: string = 'videos/main_video.mp4';
 
   return (
