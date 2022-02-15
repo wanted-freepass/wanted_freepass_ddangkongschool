@@ -72,8 +72,4 @@ const SlickSlider = styled(Slider)`
   }
 `;
 
-const SlickContent = styled.div``;
-
-const SliderImg = styled.img`
-  box-shadow: none;
-`;
+const SliderImg = styled.img``;

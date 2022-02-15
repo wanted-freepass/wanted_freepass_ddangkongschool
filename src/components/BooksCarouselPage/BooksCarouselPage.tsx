@@ -22,6 +22,4 @@ function BooksCarouselPage() {
 
 export default BooksCarouselPage;
 
-const PageWrap = styled.div`
-  background: rgba(255, 255, 255);
-`;
+const PageWrap = styled.div``;
