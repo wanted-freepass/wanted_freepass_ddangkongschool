@@ -17,4 +17,13 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
+  // "use": [
+  //   {
+  //     "loader": "@svgr/webpack",
+  //     "options": {
+  //       "typescript": true,
+  //       "ext": "tsx"
+  //     }
+  //   }
+  // ]
 }

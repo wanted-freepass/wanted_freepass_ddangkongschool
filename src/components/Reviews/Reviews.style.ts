@@ -23,6 +23,9 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   background-image: url('/images/image 22.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 0;
