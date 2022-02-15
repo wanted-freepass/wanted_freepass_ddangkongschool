@@ -2,30 +2,23 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.footer`
   width: 100%;
-  height: 921px;
-  border-radius: 0px;
+  height: 1397px;
   position: relative;
-  dispalay: flex;
-  background-color: #f9f9f9;
 `;
 
 export const Container = styled.div`
   width: 1140px;
-  height: 1397px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Title = styled.h2`
-  font-family: Noto Sans KR;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
-  letter-spacing: 0em;
   text-align: center;
   color: #333333;
-  display: flex;
-  align-items: center;
-  text-align: center;
   position: absolute;
   height: 72px;
   left: calc(50% - 586px / 2);
@@ -34,17 +27,43 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   position: absolute;
-  width: 640px;
-  height: 75px;
-  left: calc(50% - 640px / 2);
+  left: calc(50% - 540px / 2);
   top: 342px;
-  font-family: Noto Sans KR;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 40px;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #333333;
+`;
+
+export const Medias = styled.div`
+  width: 1124px;
+  height: 885px;
+  position: absolute;
+  left: calc(50% - 1124px / 2);
+  bottom: 0;
+  margin-bottom: 97px;
+`;
+
+export const Tablet = styled.div`
+  position: absolute;
+  width: 920px;
+  height: 700px;
+  left: 0;
+  bottom: 40px;
+  background-image: url('images/Free Version.png');
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 45px;
+`;
+
+export const Phone = styled.div`
+  position: absolute;
+  width: 303px;
+  height: 600px;
+  bottom: 0;
+  right: 0;
+  background-image: url('images/today.png');
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
 `;
