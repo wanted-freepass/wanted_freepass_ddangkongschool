@@ -2,7 +2,7 @@ const theme = {
   black: '#333333',
   mediumGray: '#e5e5e5',
   lightGray: '#F9F9F9',
-  white: '#fff',
+  white: '#ffffff',
   yellow: '#FFB100',
 
   fontExtraLarge: '60px',
@@ -25,7 +25,7 @@ const theme = {
 
   marginCenter: '0 auto',
 
-  flex: (direction = 'row', align = 'center', justify = 'center') => `
+  flex: (align = 'center', justify = 'center', direction = 'row') => `
     display: flex;
     flex-direction: ${direction};
     align-items: ${align};
