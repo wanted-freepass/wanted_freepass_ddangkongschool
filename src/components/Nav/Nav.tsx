@@ -4,14 +4,26 @@ import { LIST_DATA } from './data';
 import Link from 'next/link';
 
 const Nav = () => {
+  const LOGO = {
+    SRC: '/images/logo.png',
+    WIDTH: '154',
+    HEIGHT: '50',
+    ALT: 'logo',
+  };
+
   return (
     <S.Nav>
       <S.NavWrap>
         <S.LogoWrap>
-          <Image src="/images/logo.png" width="154" height="50" alt="logo" />
+          <Image
+            src={LOGO.SRC}
+            width={LOGO.WIDTH}
+            height={LOGO.HEIGHT}
+            alt={LOGO.ALT}
+          />
         </S.LogoWrap>
         <S.MenuList>
-          {LIST_DATA.map(data => {
+          {LIST_DATA.map((data: { id: number; text: string }) => {
             return (
               <S.Menu key={data.id}>
                 <Link href="/">

@@ -13,12 +13,10 @@ export const ContentWrap = styled.div`
   margin: 0 auto;
 `;
 
-export const TextWrap = styled.article`
-  /* margin-right: 50px; */
-`;
+export const TextWrap = styled.article``;
 
 export const Title = styled.h1`
-  margin: 50px 0;
+  margin-bottom: 50px;
   font-weight: ${props => props.theme.weightBold};
   font-size: ${props => props.theme.fontLarge};
   line-height: 70px;
@@ -30,7 +28,24 @@ export const Text = styled.p`
   line-height: 40px;
 `;
 
-export const VideoContainer = styled.div`
+export const CheckedContainer = styled.div`
+  ${props => props.theme.flex('center', 'flex-end', 'row')};
+  position: relative;
+  right: -34px;
   width: 788px;
   height: 566px;
+`;
+
+export const BookContainer = styled.div`
+  position: relative;
+  ${props => props.theme.flex('space-between', 'center', 'column')};
+`;
+
+export const BookWrap = styled.div`
+  margin-left: 50px;
+  ${props => props.theme.flex('center', 'center', 'column')};
+`;
+
+export const CheckedWrap = styled.div`
+  margin-bottom: 33px;
 `;
