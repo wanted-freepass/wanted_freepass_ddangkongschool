@@ -55,11 +55,18 @@ export const Coupon = styled.div`
   background: #ffb100;
   box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `;
 
-export const Left = styled.div``;
+export const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Logo = styled.h3`
+  text-align: center;
   color: white;
 `;
 export const Subject = styled.h2`
@@ -67,6 +74,7 @@ export const Subject = styled.h2`
 `;
 
 export const Description = styled.p`
+  text-align: center;
   font-size: 14px;
 `;
 
