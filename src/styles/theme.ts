@@ -45,6 +45,11 @@ const theme = {
     left: 0;
     z-index:999;
   `,
+
+  mobile: `(max-width: 360px)`,
+  mobileL: `(max-width: 480px)`,
+  tablet: `(max-width: 768px)`,
+  laptop: `(max-width: 1200px)`,
 };
 
 export default theme;
