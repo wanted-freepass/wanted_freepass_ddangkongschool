@@ -34,14 +34,14 @@ export const BOOK_DATA: BookData[] = [
   },
 ];
 
-export const CHECKED_IMAGE: Image = {
+export const CHECKED_PHOTO: Image = {
   SRC: '/images/checkedBanner/yellowCheck.gif',
   WIDTH: '190',
   HEIGHT: '120',
   ALT: 'check',
 };
 
-export const BOOK_IMAGE: Book = {
+export const BOOK_PHOTO: Book = {
   WIDTH: '180',
   HEIGHT: '230',
 };

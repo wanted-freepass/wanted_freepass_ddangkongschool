@@ -49,3 +49,5 @@ export const Text = styled.p`
     line-height: 30px;
   }
 `;
+
+export const Image = styled.img``;

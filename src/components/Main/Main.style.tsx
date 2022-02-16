@@ -1,4 +1,6 @@
 import styled, { keyframes } from 'styled-components';
+import BackgroundImage from '../../assets/images/bg.png';
+import BackgroundPhoto from '../../assets/images/img_main.png';
 
 const moveUp = keyframes`
   0% {
@@ -111,11 +113,36 @@ export const MainWrap = styled.div`
 `;
 
 export const MainImage = styled.div`
+  width: 100%;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  /* max-width: 100vw; */
 
   @media ${({ theme }) => theme.tablet} {
     margin: 0 auto;
   }
+`;
+
+export const Image = styled.img``;
+
+export const ImageBg = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('${BackgroundImage.src}');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+export const ImagePhoto = styled.div`
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('${BackgroundPhoto.src}');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;

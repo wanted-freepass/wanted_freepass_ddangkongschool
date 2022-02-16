@@ -99,3 +99,5 @@ export const BookWrap = styled.div`
 export const CheckedWrap = styled.div`
   margin-bottom: 33px;
 `;
+
+export const Image = styled.img``;
