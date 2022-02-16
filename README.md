@@ -2,7 +2,7 @@
 
 ## 배포
 
-🔗 **과제물**(netlify): https://
+🔗 **과제물**(netlify): https://admiring-khorana-2726d9.netlify.app/
 
 <br>
 
@@ -43,7 +43,7 @@
 - View (Next.js, TypeScript, Styled-components)
 - Build Tool (Create Next App)
 - Code Quality Tool (Prettier)
-- Other Tools (Git, Github, notion, Slack. AWS)
+- Other Tools (Git, Github, notion, Slack. netlify)
 ```
 
 ### 이용우
