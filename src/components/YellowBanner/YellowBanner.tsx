@@ -1,5 +1,4 @@
 import * as S from './YellowBanner.style';
-import Image from 'next/image';
 import { useResize } from '../../hooks/useResize';
 
 interface Logo {
@@ -25,7 +24,7 @@ const YellowBanner = () => {
   return (
     <S.Container>
       <S.Wrap>
-        <Image
+        <S.Image
           src={LOGO.SRC}
           width={LOGO.WIDTH}
           height={LOGO.HEIGHT}

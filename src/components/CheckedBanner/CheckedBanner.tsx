@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import * as S from './CheckedBanner.style';
-import { BOOK_DATA, CHECKED_IMAGE, BOOK_IMAGE } from './data';
+import { BOOK_DATA, CHECKED_PHOTO, BOOK_PHOTO } from './data';
 import { useResize } from '../../hooks/useResize';
 
 const CheckedBanner = () => {
@@ -26,18 +25,18 @@ const CheckedBanner = () => {
             return (
               <S.BookWrap key={data.id}>
                 <S.CheckedWrap>
-                  <Image
-                    src={CHECKED_IMAGE.SRC}
-                    width={CHECKED_IMAGE.WIDTH}
-                    height={CHECKED_IMAGE.HEIGHT}
-                    alt={CHECKED_IMAGE.ALT}
+                  <S.Image
+                    src={CHECKED_PHOTO.SRC}
+                    alt={CHECKED_PHOTO.ALT}
+                    width={CHECKED_PHOTO.WIDTH}
+                    height={CHECKED_PHOTO.HEIGHT}
                   />
                 </S.CheckedWrap>
-                <Image
+                <S.Image
                   src={data.src}
-                  width={BOOK_IMAGE.WIDTH}
-                  height={BOOK_IMAGE.HEIGHT}
                   alt={data.alt}
+                  width={BOOK_PHOTO.WIDTH}
+                  height={BOOK_PHOTO.HEIGHT}
                 />
               </S.BookWrap>
             );

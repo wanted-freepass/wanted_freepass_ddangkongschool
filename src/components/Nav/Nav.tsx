@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import * as S from './Nav.style';
 import { LIST_DATA, LOGO, MENU, CART } from './data';
 import Link from 'next/link';
@@ -13,7 +12,7 @@ const Nav = () => {
     <S.Nav>
       <S.NavWrap>
         <S.LogoWrap>
-          <Image
+          <S.Image
             src={LOGO.SRC}
             width={LOGO.WIDTH}
             height={LOGO.HEIGHT}
@@ -35,7 +34,7 @@ const Nav = () => {
         ) : (
           <S.MenuList>
             <S.Menu>
-              <Image
+              <S.Image
                 src={CART.SRC}
                 width={CART.WIDTH}
                 height={CART.HEIGHT}
@@ -43,7 +42,7 @@ const Nav = () => {
               />
             </S.Menu>
             <S.Menu>
-              <Image
+              <S.Image
                 src={MENU.SRC}
                 width={MENU.WIDTH}
                 height={MENU.HEIGHT}

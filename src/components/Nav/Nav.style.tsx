@@ -40,3 +40,5 @@ export const Menu = styled.li`
     margin-left: 20px;
   }
 `;
+
+export const Image = styled.img``;
