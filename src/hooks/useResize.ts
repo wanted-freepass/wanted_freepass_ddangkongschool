@@ -18,9 +18,9 @@ export function useResize() {
 
   useEffect(() => {
     if (hasWindow) {
-      function handleResize() {
+      const handleResize = function handleResize() {
         setWindowDimensions(getWindowDimensions());
-      }
+      };
 
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
