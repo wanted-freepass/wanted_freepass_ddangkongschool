@@ -2,7 +2,7 @@
 
 ## 배포
 
-🔗 **과제물**(netlify): https://admiring-khorana-2726d9.netlify.app/
+🔗 **과제물**(netlify): https://wanted-freepass-ddangkongschool.netlify.app/
 
 <br>
 
